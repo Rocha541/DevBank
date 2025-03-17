@@ -1,0 +1,47 @@
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import 'sass/_colors';
+@import 'sass/_layout';
+@import 'sass/_typography';
+@import 'sass/_buttons';
+@import 'sass/_spacing';   
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+   
+}
+
+svg,img{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+@import 'sass/_icons';  
+@import 'sass/_menu';    
+@import 'sass/_lists';
+@import 'sass/_animations';
+
+
+
+
+//.home{
+   // background-image: url('/img/backgrouds/backgroudhome.jpg');
+  //  background-repeat: no-repeat; /* Evita a repetição da imagem */
+    //background-size: cover; /* Redimensiona a imagem para cobrir o elemento */
+   // background-position: center; /* Centraliza a imagem no elemento */
+
+//

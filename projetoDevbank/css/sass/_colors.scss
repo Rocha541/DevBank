@@ -1,0 +1,117 @@
+
+// Colors of project
+
+// Brand-colors
+$primary-dark: #5A329D;
+$primary-normal: #661C65;
+$primary-light: #818EC7;
+
+$secondary-dark: #0D0D0C;
+$secondary-normal: #D1E9E4;
+$secondary-light: #F3E3ED;
+
+// Neutral-colors
+$black-dark: #1D1D1D;
+$black-normal: #12140D;
+$black-light: #262626;
+$black-lighten: #2F3329;
+$black-darken: #1C1B1F;
+
+$white-darken: #FAF8F5;
+$white-dark: #EBE7E1;
+$white-normal: #F3E3ED;
+$white-light: #F8F8FA;
+
+// Gray Scale
+$gray-1: #1A1A1A;
+$gray-2: #353536;
+$gray-3: #4C4C4D;
+$gray-4: #121212;
+$gray-5: #B0B0B0;
+$gray-6: #949494;
+$gray-7: #9EA0A3;
+
+
+
+
+.secondary-light{
+    color: $secondary-light;
+}
+
+.secondary-normal{
+    color: $secondary-normal;
+}
+
+.white-light{
+    color: $white-light;
+}
+
+.white-darken{
+    color: $white-darken;
+}
+
+.color-white-dark{
+    color: $white-dark;
+}
+.color-white{
+    color: $white-normal;
+}
+
+.gray-1{
+    color: $gray-1;
+}
+.color-white-dark{
+    color: $white-dark;
+}
+
+.color-black{
+    color: $black-light;
+}
+
+.color-primary{
+    color: $primary-normal;
+}
+
+.black-dark{
+    color: $black-dark;
+}
+.black-light{
+    color: $black-light;
+}
+.black-lighten{
+    color: $black-lighten;
+}
+.gray-4{
+    color: $gray-4;
+}
+.gray-5{
+    color: $gray-5;
+}
+
+
+.color-gradient{
+    display: inline-block;
+    background: linear-gradient(224.78deg, $primary-normal 8.12%, $secondary-dark 92.21%);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient{
+    display: inline-block;
+    background: linear-gradient(224.78deg, $primary-normal 8.12%, $secondary-dark 92.21%);
+      background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-tipo{
+    display: inline-block;
+    background: linear-gradient(91deg, #6211B4 0.95%, #25084C 100%);
+   background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
