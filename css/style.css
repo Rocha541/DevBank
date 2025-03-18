@@ -90,6 +90,54 @@
   -webkit-text-fill-color: transparent;
 }
 
+.bg-gradient {
+  background: linear-gradient(224.78deg, #5A329D 8.12%, #0D0D0C 92.21%);
+}
+
+.label {
+  background: linear-gradient(224.78deg, #661C65 8.12%, #0D0D0C 92.21%);
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 2px;
+  color: #1D1D1D;
+}
+
+.color-gray {
+  color: #B0B0B0;
+}
+
+.color-red {
+  color: #F03D3D;
+}
+
+.color-green {
+  color: #0BB07B;
+}
+
+.color-yellow {
+  color: #FFCE52;
+}
+
+.bg-red {
+  background-color: #F03D3D;
+}
+
+.bg-green {
+  background-color: #0BB07B;
+}
+
+.bg-yellow {
+  background-color: #FFCE52;
+}
+
+.bg-black {
+  background-color: #1D1D1D;
+}
+
+.bg-black-light {
+  background-color: #262626;
+}
+
 .grid-1 {
   width: calc(8.3333333333% - 32px);
   margin: 16px;
@@ -1833,7 +1881,6 @@ html {
 ::-webkit-scrollbar {
   background-color: #151515;
   width: 8px;
-  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2091,6 +2138,83 @@ nav {
   }
 }
 
+.list {
+  list-style: none;
+}
+.list li {
+  font-family: "assistant", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #B0B0B0;
+  position: relative;
+  padding-left: 28px;
+  transition: 0.4s ease;
+  margin: 4px 0px;
+}
+@media screen and (max-width: 960px) {
+  .list li {
+    font-family: "assistant", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+}
+.list li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("../../svg/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.list li:hover {
+  padding-left: 30px;
+}
+
+.list2 {
+  list-style: none;
+}
+.list2 li {
+  font-family: "assistant", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #9EA0A3;
+  position: relative;
+  padding-left: 28px;
+  transition: 0.4s ease;
+  margin: 4px 0px;
+}
+@media screen and (max-width: 960px) {
+  .list2 li {
+    font-family: "assistant", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+}
+.list2 li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-image: url("../../svg/icon-check3.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.list2 li:hover {
+  padding-left: 30px;
+}
+
 .fig2-circle1 {
   animation: loopcircle 7s ease 0s infinite alternate;
   transform-origin: center center;
@@ -2119,4 +2243,168 @@ nav {
   animation: loopcircle 7s ease 1.2s infinite alternate;
   transform-origin: center center;
   transform-box: fill-box;
+}
+
+@keyframes loopcircle {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(0deg);
+  }
+}
+.screen-loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #1D1D1D;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.logo-paybank {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform: translate3d(5px, 0, 0);
+}
+
+.logo-part-1 {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 32px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(243, 250, 230, 0.7) 0%, #F3FAE6 100%);
+  transform: skewX(-20deg);
+  border-radius: 5px;
+  animation: logo-part-1 4s ease-in-out forwards;
+}
+
+.logo-part-2 {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 56px;
+  height: 38px;
+  background: linear-gradient(217.08deg, #BBE768 2.12%, #496022 98.96%);
+  transform: skewX(-20deg);
+  border-radius: 5px;
+  animation: logo-part-2 4s ease-in-out forwards;
+}
+
+@keyframes logo-part-1 {
+  0% {
+    width: 56px;
+    height: 36px;
+    transform: rotateX(-15deg) rotateY(-30deg) rotate(30deg);
+  }
+  50% {
+    width: 56px;
+    height: 36px;
+    transform: rotateX(30deg) rotateY(0deg) rotate(30deg);
+  }
+  100% {
+    width: 32px;
+    height: 40px;
+    transform: skewX(-20deg) rotateY(0deg);
+  }
+}
+@keyframes logo-part-2 {
+  0% {
+    transform: rotateX(-30deg) rotateY(-20deg) rotate(-60deg);
+  }
+  50% {
+    transform: rotateX(40deg) rotateY(20deg) rotate(-60deg);
+  }
+  100% {
+    transform: skewX(-20deg) rotateX(0deg) rotateY(0deg);
+  }
+}
+.bar-loader {
+  width: 128px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+.bar-loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #818EC7;
+  width: 50%;
+  height: 100%;
+  animation: bar-loader 4s ease forwards;
+}
+
+@keyframes bar-loader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.svg-screen-loading {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0.5;
+}
+
+.abstract {
+  animation: abstract 16s ease-in-out infinite;
+}
+
+.svg-abstract {
+  position: absolute;
+  top: -20%;
+  left: 0;
+}
+@media screen and (max-width: 1440px) and (min-width: 1268px) {
+  .svg-abstract {
+    top: 5%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1268px) and (min-width: 620px) {
+  .svg-abstract {
+    top: 10%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .svg-abstract {
+    top: 5%;
+    left: 0;
+  }
+}
+
+@keyframes abstract {
+  0% {
+    d: path("M-118 725C300 560 520.475 676.889 788 702C1274 747.617 712.324 193.19 524 664C324 1164 2442 574 2096 290C1704.37 -31.457 1912 1154 2648 523"); /**/
+  }
+  25% {
+    d: path("M-118 725C300 560 536.475 576.889 804 602C1912 706 524 1171.08 524 664C524 44 2832 828 2096 290C1672.39 -19.652 1912 1154 2648 523"); /**/
+  }
+  50% {
+    d: path("M-118 725C300 560 553.683 927.884 790 800C1762 274 220.903 409.449 690 602C1618 982.919 1618 1010 1724 492C1774.49 245.256 2134 858 2648 523"); /**/
+  }
+  75% {
+    d: path("M-118 724.999C300 560 476 820 792 650C1418.75 312.825 1352 510 1170 782C894.996 1192.99 1578 1078 1684 560C1734.49 313.256 2134 857.999 2648 523"); /**/
+  }
+  100% {
+    d: path("M-118 725C300 560 520.475 676.889 788 702C1274 747.617 712.324 193.19 524 664C324 1164 2442 574 2096 290C1704.37 -31.457 1912 1154 2648 523"); /**/
+  }
 }/*# sourceMappingURL=style.css.map */
