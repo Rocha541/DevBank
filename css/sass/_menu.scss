@@ -1,0 +1,285 @@
+
+html{
+  scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar{
+  background-color: #151515;
+  width: 8px;
+  height:8px;
+ 
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ff007f;
+  width: 8px;
+  border-radius: 8px;
+ 
+}
+
+ul, li, a{
+  list-style: none; /* Remove os marcadores */
+  padding: 0; /* Remove o espaçamento interno */
+  margin: 0; /* Remove margens externas */
+}
+
+header{
+  width: 100%;
+  height: 80px;
+
+  padding: 6px 18px;
+
+  transition: 1s ease;
+
+  top: 0;
+
+ 
+ 
+  //border: 1px solid red;
+
+  z-index: 990;
+  opacity: 1;
+
+}
+nav{
+  max-width: 1280px;
+  margin: 0 auto;
+  //border: 1px solid red;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backgroud-home{
+  background-image: url(/img/backgrouds/backgroudhome.webp);
+  min-height: 1000px;
+  max-height: 1080px;
+  padding-top: 20px;
+}
+.backgroud-home img{
+  overflow: hidden;
+}
+
+.cometa::after{
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0),white);
+    transform: translateY(-50%);
+    top: 200%;
+    left: 100px;
+    border-radius: 2px;
+    @include responsive(s){
+      top: 300%;
+      left: 40px;
+      width: 300px;
+     }
+
+}
+
+.backgroud-prod{
+  min-height: 1000px;
+  max-height: 1050px;
+  padding-top: 20px;
+  object-fit: cover;
+  
+    background-image: radial-gradient(circle, #b0005a, #ff007f, #50003a, #0a0714, #050217);
+   transition: background-image 1s ease-in-out;
+   
+}
+
+.backgroud-card{
+
+  background: $gray-4;
+  background-size: cover;
+  //linear-gradient(to top, #A72376,#22082B,  #050217)
+  
+    min-height: 1000px;
+  max-height: 1080px;
+  padding-top: 20px;
+
+}
+
+.backgroud-user{
+ 
+  background-color: $white-light;
+  min-height: auto;
+  
+  padding-top: 20px;
+}
+
+.backgroud-app{
+  background-color: $white-light;
+  min-height: 1000px;
+  max-height: 1080px;
+  padding-top: 10px;
+  @include responsive(s){
+    min-height: max-content;
+   }
+}
+.phone{
+  overflow: hidden;
+  @include responsive(m){
+    width: 400px ;
+    height: 500px;
+   }
+   @include responsive(s){
+    width: 330px ;
+    height: 450px;
+   }
+}
+
+
+.backgroud-desktop{
+  background-color: $gray-4;
+  min-height: 1000px;
+  max-height: 1080px;
+  padding-top: 10px;
+}
+.desktop{
+  overflow: hidden;
+  @include responsive(s){
+    width: 330px ;
+    height: 450px;
+   }
+
+}
+
+.backgroud-footer{
+  background: $gray-4;
+  min-height: 600px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
+// carroseis
+.swiper1{
+  width: 1000px;
+  height: 350px;
+  @include responsive(m){
+    width: 960px ;
+   }
+
+   @include responsive(s){
+    width: 95%;
+    
+   }
+    
+} 
+
+
+
+
+
+
+// cartões
+
+
+
+.swiper2{
+  height:600px;
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(m){
+    width: 95% ;
+   }
+
+   @include responsive(s){
+    width: 80%;
+    margin-left: 20px;
+   }
+}
+
+
+.card-img{
+  width: 100%;
+height: 70%;
+  overflow: hidden;
+  display: block;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+transition: transform 0.3s ease;
+transform-origin: center;
+ &:hover{
+  transform: scale(1.12);
+ 
+
+}
+
+}
+
+.slide-card{
+  width: 300px;
+  height: 470px;
+  background: $gray-1;
+  border-radius: 8px;
+
+}
+
+// beneficios
+.card-beneficios{
+  width: 100% ;
+  height: 250px !important; 
+  background: $white-darken;
+  border-radius: 8px;
+  padding: 24px;
+  
+  @include responsive(m){
+    width: 100%  ;
+   }
+   @include responsive(s){
+    width: 100% ;
+    margin-right: 15px;
+    
+   }
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+background: transparent;
+  --swiper-navigation-top-offset: 90%;
+  --swiper-navigation-size: 50px;
+  --swiper-navigation-sides-offset: 400px;
+  border: none;
+  @include responsive(m){
+    --swiper-navigation-sides-offset: 200px;
+   }
+   @include responsive(s){
+    --swiper-navigation-sides-offset: 100px;
+   }
+   @include responsive(xs){
+    --swiper-navigation-top-offset: 80%;
+   }
+
+}
+
+.swiper-button-prev::after{
+  content: url(/img/icons/setaEsq.png) !important;
+  @include responsive(xs){
+    display: none;
+  
+   }
+
+}
+.swiper-button-next::after{
+  content: url(/img/icons/setaDir.png) !important;
+  @include responsive(xs){
+    display: none;
+  
+   }
+}
+
+
+
+
+
+
+
